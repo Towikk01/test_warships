@@ -15,7 +15,7 @@ class ShipWidget extends StatelessWidget {
         child: Transform.rotate(
           angle: !ship.isHorizontal
               ? 0
-              : 3.14159 / 2, // Rotate 90 degrees if vertical
+              : -(3.14159 / 2), // Rotate 90 degrees if vertical
           child: Image.asset(
             'assets/ship-${ship.size}.png',
             fit: BoxFit.cover, // Makes the image fill the container

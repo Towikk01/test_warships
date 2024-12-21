@@ -19,6 +19,26 @@ class GameViewModel extends ChangeNotifier {
 
   List<List<int>> board = List.generate(10, (_) => List.filled(10, 0));
 
+  final List<Ship> placedShips = [];
+
+  int _highlightedCell = -1;
+
+  void setHighlightedCell(int cellIndex) {
+    _highlightedCell = cellIndex;
+    notifyListeners();
+  }
+
+  Ship? findShipByPosition(int x, int y) {
+    for (final ship in ships) {
+      if (ship.positions.contains(x * 10 + y)) {
+        return ship;
+      }
+    }
+    return null;
+  }
+
+  int get highlightedCell => _highlightedCell;
+
   void autoPlaceShips() {
     clearBoard();
     final random = Random();
@@ -39,6 +59,7 @@ class GameViewModel extends ChangeNotifier {
   }
 
   void removeShip(Ship ship) {
+    if (ship.positions.isEmpty) return;
     for (int i = 0; i < ship.size; i++) {
       final x = ship.positions[i] ~/ 10;
       final y = ship.positions[i] % 10;
