@@ -19,7 +19,7 @@ class GameScreen extends ConsumerWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Розстановлення кораблів'),
+        title: const Text('Розміщення кораблів'),
         actions: [
           IconButton(
             onPressed: viewModelNotifier.clearBoard,

@@ -67,7 +67,7 @@ class GameBoard extends ConsumerWidget {
                   ),
                   childWhenDragging: shipOnCell != null
                       ? Container(
-                          color: Colors.red,
+                          color: Colors.green,
                           child: Transform.rotate(
                             angle:
                                 !shipOnCell.isHorizontal ? 0 : -(3.14159 / 2),
@@ -79,7 +79,7 @@ class GameBoard extends ConsumerWidget {
                   child: Container(
                     margin: EdgeInsets.all(shipOnCell == null ? 1 : 0),
                     decoration: BoxDecoration(
-                      color: isOccupied ? Colors.red : Colors.blueAccent,
+                      color: isOccupied ? Colors.green : Colors.blueAccent,
                       border: isValidDrop
                           ? Border.all(color: Colors.green, width: 2)
                           : null,

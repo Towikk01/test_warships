@@ -1,0 +1,18 @@
+<lint-module
+    format="1"
+    dir="/Users/t0wikk/Documents/MobileDevelopment/test_warships/android/app"
+    name=":app"
+    type="APP"
+    maven="android:app:"
+    agpVersion="8.1.0"
+    buildFolder="/Users/t0wikk/Documents/MobileDevelopment/test_warships/build/app"
+    bootClassPath="/Users/t0wikk/Library/Android/sdk/platforms/android-34/android.jar:/Users/t0wikk/Library/Android/sdk/build-tools/33.0.1/core-lambda-stubs.jar"
+    javaSourceLevel="1.8"
+    compileTarget="android-34">
+  <lintOptions
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true"/>
+  <variant name="release"/>
+</lint-module>
