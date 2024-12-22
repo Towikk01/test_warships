@@ -1,21 +1,36 @@
-<<<<<<< HEAD
-# warships-test
-=======
-# test_warships
+# Морський бій
 
-A new Flutter project.
+"Морський бій" — це мобільна гра на Flutter, що відтворює класичну гру в морський бій.  
 
-## Getting Started
+## 🚀 Функціонал
+- Ручне або автоматичне розташування кораблів
+- Початок гри після розташування всіх кораблів
+- Зручний інтерфейс із підтримкою drag-and-drop  
 
-This project is a starting point for a Flutter application.
+## 🛠️ Технології
+- **Flutter**: для UI та логіки
+- **Riverpod**: для управління станом
+- **Dart**: основна мова програмування  
 
-A few resources to get you started if this is your first Flutter project:
+## 📸 Скріншоти
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Головний екран
+![Головний екран](assets/first_screen.png)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
->>>>>>> ac89223 (first commit)
-# warships
+### Розташування кораблів
+![Розташування кораблів](assets/second_screen.png)
+
+
+## 📖 Як запустити проект
+1. Склонуй репозиторій:
+   ```bash
+   git clone https://github.com/Towikk01/test_warships.git
+   cd test_warships
+
+2. Встанови залежності:
+    flutter pub get
+
+3. Запусти проект:
+    flutter run
+
+
