@@ -13,8 +13,8 @@ class HomeScreen extends StatelessWidget {
           Positioned.fill(
             child: ColorFiltered(
               colorFilter: ColorFilter.mode(
-                Colors.black.withOpacity(0.5), // Adjust darkness here
-                BlendMode.darken, // Applies the black overlay
+                Colors.black.withOpacity(0.5),
+                BlendMode.darken,
               ),
               child: Image.asset(
                 'assets/home_screen.jpg',
@@ -22,7 +22,6 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
           ),
-          // Content
           Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,

@@ -13,7 +13,7 @@ class RowLetters extends StatelessWidget {
           width: cellSize - 15,
           height: 20,
         ),
-// Spacer for numbers column
+
         for (var i = 0; i < 10; i++)
           Container(
             width: cellSize - 5,

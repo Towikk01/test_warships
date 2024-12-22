@@ -1,7 +1,7 @@
 class Ship {
   final int size;
   bool isPlaced;
-  bool isHorizontal; // New property for rotation
+  bool isHorizontal;
   List<int> positions;
 
   Ship({required this.size})
